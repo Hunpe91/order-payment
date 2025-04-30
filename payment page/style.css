@@ -1,0 +1,150 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: url(./images/pattern-background-desktop.jpg) no-repeat top center;
+    background-size: contain;
+    background-color: e0e8ff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;   
+}
+.cad {
+    background: white;
+    border-radius: 20px;
+    max-width: 450px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
+}
+.hero{
+    width: 100%;
+    display: block;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+
+}
+h1 {
+    color: #1f2f56;
+    margin-bottom: 20px;
+    font-size: 24pt;
+}
+.description {
+    color: #7280a7;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.Sub {
+    background: wheat;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;    
+}
+.music-icon {
+    width: 50px;
+    height: 50px;
+}
+.plan-details {
+    flex-grow: 1;
+    text-align: left;
+}
+.plan-type {
+    color: #1f2f56;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.price {
+    color: #7280a7;
+    font-size: 0.9rem;
+}
+.change-link {
+    color:  #382ae1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+.change-link:hover {
+opacity: 0.0;
+}
+.payment-options {
+    display: none;
+    background: #f8f9fe;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.payment-options:target {
+    display: block;
+}
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.payment-method:hover {
+    background: #e0e8ff;
+}
+.payment-method img {
+    width: 35px;
+    height: 35px;
+}
+.proceed {
+    background: #382ae1;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+.proceed:hover {
+    background: #766cf1;
+}
+.cancel-link {
+    color: #7280a7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.cancel-link:hover {
+    color:  #1f2f56;
+}
+@media (max-width: 480px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.jpg);
+    }
+}
+.cad {
+    max-width: 350px;
+}
+.content {
+    padding: 25px;
+}
+h1 {
+    font-size: 24px;
+}
+.description {
+    padding: 0;
+}
